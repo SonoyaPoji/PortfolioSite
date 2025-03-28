@@ -1,0 +1,327 @@
+/* This is a comment
+
+just like lua you cannot put comments inside of each other the ender breaks it
+
+*/
+
+
+html {
+  
+  background: linear-gradient(to bottom, black 0%, rgb(9, 0, 0) 100%);
+  
+  background-attachment: fixed;
+
+
+  
+}
+
+
+* {
+  /*
+  box-sizing: border-box;
+  */
+  margin: 0;
+  padding: 0;
+  /*
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  */
+  font-size: 111%;
+
+
+  
+
+}
+
+.topbar{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* 
+  background: black;
+  /*
+  height: 100%;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*font-size: 100%;*/
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+
+
+
+.topbarContainer{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  /*padding: 100 100px;
+  /*background-color: blue;*/
+  /*align-items: baseline;*/
+}
+
+
+.topbarLogo{
+  display:flex;
+  align-items: center;
+  font-size: 198%;
+
+  background-image: red;
+  background-image: linear-gradient(to top, rgb(146, 1, 1) 0%, rgb(255, 60, 0) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
+
+  /*align-self: baseline;*/
+}
+
+
+
+
+.topbarMenu{/*pretty*/
+  list-style: none;
+  display: flex; /*this lets lists be horizontal*/
+    
+
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0px 10px;
+  gap: 1%;
+  
+  /*background-color: blue;*/
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-content: center;
+  align-items:flex-start;
+
+}
+
+
+.List0{
+  background-image: red;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.205) 0%, red 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.ListTier1{
+  list-style: none;
+  display: flex;
+  justify-content:flex-start;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  
+}
+
+
+.List1{
+  font-size: 66%;
+  /*
+  background-image: red;
+  */
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.205) 0%, red 100%);
+  
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+.ListTier1 {
+
+  display:grid;
+  
+  grid-template-columns: auto;
+  
+  margin: 0;
+  
+  height: fit-content;
+  width:fit-content;
+  
+  
+  position:absolute;
+  
+  
+  top: -1000px;
+  
+  opacity: 0;
+  z-index: -1;
+  
+  transition: all 0.5s ease;
+    
+    
+}
+
+.ListTier1.active {
+  /*
+  background: #000000f1;
+  */
+  background-image: linear-gradient(to top, rgb(22, 0, 0) 0%, rgba(0, 0, 0, 0.733) 100%);
+  border-radius: 6px;
+  background-size:contain;
+  
+
+  
+
+  top:100%;
+  opacity: 1;
+  
+  z-index: 99;
+  height: fit-content;
+  
+  width:fit-content;
+  transition: all 0.5s ease;
+  font-size: 1.6rem;
+}
+
+
+
+/*
+@media screen {
+  .ListTier1 > LI {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+
+
+}
+*/
+
+/*.topbarMenu > LI:not(:last-child)*/
+
+
+
+/*
+.topbarMenu > LI:first-child,
+
+.topbarMenu > LI:last-child {background: none; }
+*/
+
+
+
+/*
+WWWWWWWWWWWWW  Display Window Section WWWWWWWWWWWWW
+*/
+
+
+.section:nth-child(2){
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+}
+
+
+
+.displayScreen{
+  display: flex;
+
+  color: white;
+  font-family:"Trebuchet MS", sans-serif;
+
+  /*
+  background-color: blue;
+  */
+  margin-top: 12%;
+  width: 60%;
+  
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+  
+}
+
+.InfoSheet{
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+
+  font-size:1%;
+  
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+.InfoSheet.active {
+
+  font-size:75%;
+
+  top: 12%;
+
+  padding-left: 3%;
+  padding-right: 3%;
+  
+
+
+  opacity: 1;
+  z-index: 99;
+
+  transition: all 0.5s ease;
+
+}
+
+
+
+/*
+WWWWWWWWWWWWW  Illustrator WWWWWWWWWWWWW
+*/
+
+
+#InfoSheetIllustrator{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-content: center;
+  align-items:flex-start;
+}
+
+
+
+.image{
+  
+
+  width: 150px; 
+  height: 150px; 
+  
+  object-fit: cover;
+   
+  
+}
+
+
+
+.displayScreen > .InfoSheet{
+  display: grid;
+  gap: 6%;
+}
+
+
+#InfoSheetRobloxSmaller1{
+  font-size: 6px;
+}
+
+
+
+
+
